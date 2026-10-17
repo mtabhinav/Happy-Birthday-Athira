@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Athira❤️</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+    color: white;
+    overflow-x: hidden;
+}
+
+.background-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    pointer-events: none;
+}
+
+header,
+section {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(rgba(9, 0, 10, .62), rgba(9, 0, 10, .72)),
+        radial-gradient(circle at 20% 20%, rgba(255, 50, 120, .15), transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(180, 30, 100, .15), transparent 45%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* =========================
+   OPENING SCREEN
+========================= */
+
+#opening {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(145deg, #13000e, #350018, #100008);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9999;
+    transition: 1s ease;
+}
+
+.opening-content {
+    padding: 30px;
+}
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #ffb6cf;
+    margin-bottom: 15px;
+}
+
+.opening-content h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(48px, 13vw, 100px);
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 0 30px rgba(255, 50, 130, .7);
+}
+
+.opening-content p {
+    margin: 20px auto;
+    max-width: 500px;
+    color: #ffdce8;
+}
+
+.open-btn {
+    border: none;
+    padding: 15px 32px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff3d81, #ff0055);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 35px rgba(255, 0, 80, .3);
+    transition: .3s;
+}
+
+.open-btn:hover {
+    transform: scale(1.06);
+}
+
+/* =========================
+   NAV
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(10,0,8,.55);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    color: #ff77a9;
+}
+
+.music-btn {
+    border: 1px solid rgba(255,255,255,.2);
+    background: rgba(255,255,255,.08);
+    color: white;
+    border-radius: 50px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 90px 20px 50px;
+    position: relative;
+}
+
+.hero-content {
+    width: min(100%, 900px);
+    margin: 0 auto;
+}
+
+.hero-photo {
+    width: min(100%, 720px);
+    height: clamp(280px, 62vh, 620px);
+    margin: 18px auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 22px;
+    background: rgba(255,255,255,.04);
+}
+
+.hero-photo img,
+.hero-photo video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.eyebrow {
+    color: #ff7cab;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(65px, 15vw, 140px);
+    line-height: .95;
+    margin: 15px 0;
+    background: linear-gradient(90deg, #fff, #ff78aa, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-animation: text;
+    color: transparent;
+}
+
+.hero p {
+    color: #e9cbd7;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.scroll {
+    margin-top: 40px;
+    color: #ff91b6;
+    font-size: 13px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 90px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: #ff6f9f;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(42px, 8vw, 65px);
+    margin-top: 8px;
+}
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.time-box {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,100,160,.15);
+    border-radius: 18px;
+    padding: 20px 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.time-box strong {
+    display: block;
+    font-size: 30px;
+    color: #ff75a8;
+}
+
+.time-box span {
+    font-size: 11px;
+    color: #c9aab7;
+    text-transform: uppercase;
+}
+
+/* =========================
+   LOVE LETTER
+========================= */
+
+.letter {
+    max-width: 750px;
+    margin: auto;
+    padding: 45px 30px;
+    border-radius: 25px;
+    background:
+        linear-gradient(rgba(12,3,10,.52), rgba(12,3,10,.66)),
+        url("athira3.jpg") center / cover no-repeat;
+    border: 1px solid rgba(255,100,160,.15);
+    box-shadow: 0 20px 70px rgba(0,0,0,.3);
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+
+.letter p {
+    color: #e7ced8;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.letter .letter-highlight {
+    padding: 16px 20px;
+    border-left: 3px solid #ff75a8;
+    border-radius: 0 14px 14px 0;
+    background: rgba(24,5,16,.58);
+    color: #fff0f6;
+}
+
+.letter-highlight strong {
+    color: #ff9abd;
+}
+
+.signature {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    color: #ff75a8;
+    text-align: right;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(255,100,160,.3);
+}
+
+.memory {
+    width: 50%;
+    padding: 15px 35px;
+    position: relative;
+}
+
+.memory:nth-child(even) {
+    margin-left: 50%;
+}
+
+.memory-card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,100,160,.12);
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.memory-card h3 {
+    color: #ff78a9;
+    margin-bottom: 8px;
+}
+
+.memory-card p {
+    color: #cdb7c0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* =========================
+   PHOTO ALBUM
+========================= */
+
+.photo-album {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.album-photo {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(255,100,160,.18);
+    border-radius: 22px;
+    background: linear-gradient(145deg, rgba(44,20,34,.82), rgba(20,10,20,.78));
+    box-shadow: 0 18px 48px rgba(0,0,0,.28);
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.album-photo:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255,117,168,.55);
+    box-shadow: 0 24px 55px rgba(0,0,0,.38), 0 0 24px rgba(255,70,130,.1);
+}
+
+.album-photo:nth-child(4) { grid-column: 2 / span 2; }
+.album-photo:nth-child(5) { grid-column: 4 / span 2; }
+
+.album-photo img,
+.album-photo video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Keep every album image in the same frame, including the final photo. */
+.photo-album img[src="athira6.jpeg"] {
+    object-position: center 20%;
+}
+
+.album-caption {
+    flex: 1;
+    min-height: 112px;
+    padding: 16px 18px 18px;
+}
+
+.album-caption h3 {
+    color: #ff9abd;
+    font-family: "Dancing Script", cursive;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.album-caption p {
+    color: #cdb7c0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .photo-album { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .album-photo:nth-child(n) { grid-column: auto; }
+    .album-photo:last-child:nth-child(odd) { grid-column: 1 / -1; width: min(100%, 420px); justify-self: center; }
+}
+
+/* =========================
+   SURPRISE
+========================= */
+
+.surprise {
+    text-align: center;
+}
+
+.gift {
+    width: 130px;
+    height: 110px;
+    margin: 30px auto;
+    position: relative;
+    cursor: pointer;
+    animation: float 2s infinite ease-in-out;
+}
+
+.gift-box {
+    position: absolute;
+    bottom: 0;
+    width: 130px;
+    height: 80px;
+    background: #ff2d6f;
+    border-radius: 5px;
+}
+
+.gift-box::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 100%;
+    background: #ffb3cb;
+}
+
+.gift-lid {
+    position: absolute;
+    top: 15px;
+    left: -8px;
+    width: 146px;
+    height: 25px;
+    background: #ff5688;
+    border-radius: 5px;
+}
+
+.gift-lid::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 25px;
+    background: #ffb3cb;
+}
+
+.surprise-message {
+    display: none;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #160611;
+    border: 1px solid rgba(255,100,160,.2);
+}
+
+.surprise-message::before {
+    content: "";
+    display: block;
+    height: 300px;
+    margin: -30px -30px 24px;
+    background: url("athira2.jpeg") center 22% / cover no-repeat;
+}
+
+.surprise-message.show {
+    display: block;
+    animation: appear .8s ease;
+}
+
+.surprise-message h3 {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    color: #ff75a8;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.45);
+}
+
+.surprise-message p {
+    line-height: 1.9;
+    color: #fff3f8;
+    text-shadow: 0 2px 6px rgba(0,0,0,.7);
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.final h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(55px, 12vw, 110px);
+    color: #ff6f9f;
+}
+
+.final p {
+    color: #d9bdc8;
+    margin-top: 20px;
+}
+
+/* =========================
+   HEARTS
+========================= */
+
+.heart {
+    position: fixed;
+    bottom: -20px;
+    pointer-events: none;
+    user-select: none;
+    animation: rise linear forwards;
+    z-index: 50;
+    will-change: transform, opacity;
+    filter: drop-shadow(0 0 8px rgba(255, 105, 160, .55));
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .heart { animation-duration: 1ms !important; }
+}
+
+@keyframes rise {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 700px) {
+
+    section {
+        padding: 70px 18px;
+    }
+
+    .hero-photo {
+        height: min(58vh, 480px);
+        margin: 16px auto 24px;
+        border-radius: 16px;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .memory,
+    .memory:nth-child(even) {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 35px;
+    }
+
+    .letter {
+        padding: 30px 22px;
+    }
+
+    .photo-album {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .album-photo:last-child:nth-child(odd) {
+        grid-column: auto;
+        width: 100%;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="athirsvid.mp4" type="video/mp4">
+</video>
+
+<!-- =========================
+     OPENING
+========================= -->
+
+<div id="opening">
+
+    <div class="opening-content">
+
+        <div class="small-text">
+            A LITTLE SURPRISE FOR YOU
+        </div>
+
+        <h1>Athira❤️</h1>
+
+        <p>
+            A little piece of my heart, made just for you…
+        </p>
+
+        <button class="open-btn" onclick="openWebsite()">
+            Open Your Surprise 💝
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <div class="logo">
+        Our Story ❤️
+    </div>
+
+    <button class="music-btn" onclick="toggleMusic()" id="musicButton">
+        🎵 Music
+    </button>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            Today is all about you
+        </div>
+
+        <h1>Happy Birthday<br>My Love</h1>
+
+        <p>
+            To the most beautiful person who came into my life,
+            today isn't just another day.
+            Today is the day the world became a little more beautiful
+            because you were born.
+        </p>
+
+        <div class="scroll">
+            ↓ Scroll down, beautiful ↓
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     COUNTDOWN
+========================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>Counting the moments</span>
+
+        <h2>Until Your Birthday 🎂</h2>
+
+    </div>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <strong id="days">00</strong>
+            <span>Days</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>Hours</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>Minutes</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>Seconds</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="section-title">
+        <span>A few words from my heart</span>
+        <h2>A Few Words From My Heart</h2>
+    </div>
+
+    <div class="letter">
+
+        <!-- CHANGE THIS MESSAGE -->
+
+        <p>
+            Dear Athira,
+        </p>
+
+        <p>
+            I honestly wasn't sure what to write here, because there are a 
+            lot of things I could say, but not everything is easy to put into words..
+        </p>
+
+        <p>
+            We've had our good moments, difficult moments, misunderstandings, and times when we were close and times when we were apart. A lot has happened between us,
+             and I know things aren't always simple.
+        </p>
+
+        <p>
+            I don't know what the future holds for us, and I don't want to make any promises about things I can't be certain about. But one thing I do know is that you've been a meaningful part of my life, and the time we've shared will always have its own place in my memories.
+            So, on your birthday, I just want to wish you genuinely good things.
+        </p>
+
+        <p class="letter-highlight">
+            I hope this new year of your life brings you <strong>happiness, peace, and success</strong>, and the kind of moments that make you truly smile. I hope you achieve the things you've been working towards and find more reasons to be happy with yourself and your life.
+
+        </p>
+
+        <p>And even though life doesn't always go the way we expect, I hope you always remember that you are someone who mattered to me, and someone I will always wish the best for.
+
+        </p>
+        <p>I made this little birthday page for you because I wanted to do something a little different this year. It's not perfect, but I put some time and effort into making it myself, in my own way.</p>
+
+        <p>That's all I wanted to say.</p>
+
+
+        <p>
+            Happy Birthday, my beautiful girl. ❤️
+        </p>
+
+        <p>Take care of yourself, keep smiling, and have a beautiful year ahead.</p>
+
+        <!-- CHANGE YOUR NAME -->
+
+        <div class="signature">
+            Forever yours,<br>
+            Abhinav ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TIMELINE
+========================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>Our journey</span>
+
+        <h2>Beautiful Moments ✨</h2>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="memory">
+
+            <div class="memory-card">
+
+                <h3>The Beginning ❤️</h3>
+
+                <p>
+                    “It all started on that first day of Plus One, when I saw you for the first time. I remember liking you even then, but I was too scared to say anything. Later, I finally sent you a simple ‘Hi’ on WhatsApp. And you replied with just a little smiley. I still remember that moment even now. It was such a small thing, but somehow, that little reply became the beginning of everything between us. From that one ‘Hi’ to everything we’ve shared, everything we’ve been through, and where we are today… that was where our story truly began.” ❤️
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="memory">
+
+            <div class="memory-card">
+
+                <h3>Our First Memory </h3>
+
+                <p>
+                   “July 5th — one of those days I don't think I'll ever forget. It was the beginning of our Plus Two days, and that day you told me that you liked me. Honestly, I never expected it. I didn't know if you felt the same way about me, so hearing it from you was a real surprise. It was such a simple moment, but it became one of the most special memories of my life.” ❤️
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="memory">
+
+            <div class="memory-card">
+
+                <h3>That Special Day 🥰</h3>
+
+                <p>
+                    “October 18th — your 17th birthday. That day still holds a very special place in my heart. I remember giving you a gift that day, and somewhere in between all those little moments, I gave you my first kiss. It might have been just one moment, but for me, it became a memory I could never forget. Even after everything that has happened, October 18th will always remain one of the most special days of my life.” ❤️
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="memory">
+
+            <div class="memory-card">
+
+                <h3>Today 🎂</h3>
+
+                <p>
+                    “Maybe life has changed, maybe we have changed, and maybe the future will take us somewhere neither of us can imagine. But whenever your birthday comes around, a part of me will always remember the girl who once meant so much to me — with a smile, with gratitude, and with a little piece of my heart.” ❤️
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHOTO ALBUM
+========================= -->
+
+<section id="photo-album">
+
+    <div class="section-title">
+        <span>Little moments, forever memories</span>
+        <h2>Our Photo Album 📸</h2>
+    </div>
+
+    <div class="photo-album">
+        <article class="album-photo">
+            <img src="athira5.jpeg" alt="A cherished memory with Athira">
+            <div class="album-caption">
+                <h3>A lovely memory</h3>
+                <p>One of those memories that stays close to my heart.</p>
+            </div>
+        </article>
+
+        <article class="album-photo">
+            <img src="athira4.jpeg" alt="A favorite photo of Athira">
+            <div class="album-caption">
+                <h3>Your beautiful smile</h3>
+                <p>A little moment I always love looking back on.</p>
+            </div>
+        </article>
+
+        <article class="album-photo">
+            <img src="athira6.jpeg" alt="Another favorite photo of Athira">
+            <div class="album-caption">
+                <h3>Always special</h3>
+                <p>Some moments are too precious not to keep.</p>
+            </div>
+        </article>
+
+        <article class="album-photo">
+            <img src="athira7.jpeg" alt="A special memory with Athira">
+            <div class="album-caption">
+                <h3>Another lovely memory</h3>
+                <p>A moment together that I will always remember.</p>
+            </div>
+        </article>
+
+        <article class="album-photo">
+            <video autoplay muted loop playsinline preload="auto" aria-label="A special video memory">
+                <source src="athiravid1.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <div class="album-caption">
+                <h3>A moment in motion</h3>
+                <p>A little video memory to keep close.</p>
+            </div>
+        </article>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SURPRISE
+========================= -->
+
+<section class="surprise">
+
+    <div class="section-title">
+
+        <span>One last thing...</span>
+
+        <h2>You Have A Gift 🎁</h2>
+
+    </div>
+
+    <p style="color:#cdb7c0;">
+        Tap the gift. ❤️
+    </p>
+
+    <div class="gift" onclick="openGift()">
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-box"></div>
+
+    </div>
+
+
+    <div class="surprise-message" id="surpriseMessage">
+
+        <h3>You're My Favorite Person ❤️</h3>
+
+        <p>
+           I don't know if there will ever be a second chance for us.
+But if life ever gives me one, I hope you'll let me have it.
+I don't want to make big promises or say that everything will suddenly be perfect. I just want the chance to show you, through my actions, that I can do better this time.
+I know there are things that hurt you, things you are unsure about, and things that may make it difficult for you to believe in us again. I understand that.
+And if you ever choose to give me that chance, I won't ask you for anything more. I'll just do my part, quietly. I'll care for you the way I should have, understand you better, respect your space, and make sure you never feel like you're carrying everything alone.
+But if that chance never comes, I'll accept that too.
+Maybe some things are simply written differently for us. And if this is where our story is meant to end, I'll carry the memories with me and continue my life with gratitude for everything we had.
+And if there really is another life…
+Maybe I'll find you there again.
+Maybe we'll meet at a different time, in a different place, with a different story.
+And if I do find you again,
+I'll choose you again.
+I'll wait for you there.
+And I'll find my way back to you. ❤️
+
+            <br><br>
+
+            I love you more than words can explain.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+    <div>
+
+        <div class="eyebrow">
+            One last message
+        </div>
+
+        <h2>
+            Happy Birthday,<br>
+            Athira ❤️
+        </h2>
+
+        <p>
+            Here's to you, to me, and to all the memories
+            we haven't made yet.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio id="birthdayMusic" loop>
+
+    <!--
+    Put your music file in the same folder
+    and name it music.mp3
+    -->
+
+    <source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+
+<script>
+
+/* ===================================
+   OPEN WEBSITE
+=================================== */
+
+function openWebsite() {
+
+    const opening = document.getElementById("opening");
+
+    opening.style.opacity = "0";
+
+    setTimeout(() => {
+
+        opening.style.display = "none";
+
+    }, 1000);
+
+    startMusic();
+
+}
+
+
+/* ===================================
+   MUSIC
+=================================== */
+
+const music = document.getElementById("birthdayMusic");
+
+let musicPlaying = false;
+
+function startMusic() {
+
+    music.play()
+        .then(() => {
+
+            musicPlaying = true;
+
+            document.getElementById("musicButton").innerHTML =
+                "🔊 Music";
+
+        })
+        .catch(() => {
+
+            console.log("Music requires user interaction.");
+
+        });
+
+}
+
+function toggleMusic() {
+
+    if (musicPlaying) {
+
+        music.pause();
+
+        musicPlaying = false;
+
+        document.getElementById("musicButton").innerHTML =
+            "🎵 Music";
+
+    } else {
+
+        music.play();
+
+        musicPlaying = true;
+
+        document.getElementById("musicButton").innerHTML =
+            "🔊 Music";
+
+    }
+
+}
+
+
+/* ===================================
+   BIRTHDAY COUNTDOWN
+=================================== */
+
+/*
+   CHANGE THIS DATE
+
+   Example:
+   October 10, 2026
+
+   Format:
+   YYYY-MM-DDTHH:MM:SS
+
+*/
+
+const birthdayDate = new Date("2026-10-18T00:00:00").getTime();
+
+
+function updateCountdown() {
+
+    const now = new Date().getTime();
+
+    const distance = birthdayDate - now;
+
+    if (distance <= 0) {
+
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+
+        return;
+
+    }
+
+    const days = Math.floor(
+        distance / (1000 * 60 * 60 * 24)
+    );
+
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+        (distance % (1000 * 60))
+        / 1000
+    );
+
+
+    document.getElementById("days").innerText =
+        String(days).padStart(2, "0");
+
+    document.getElementById("hours").innerText =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").innerText =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").innerText =
+        String(seconds).padStart(2, "0");
+
+}
+
+setInterval(updateCountdown, 1000);
+
+updateCountdown();
+
+
+/* ===================================
+   SURPRISE GIFT
+=================================== */
+
+function openGift() {
+
+    const message =
+        document.getElementById("surpriseMessage");
+
+    message.classList.toggle("show");
+
+    createHearts(25);
+
+}
+
+
+/* ===================================
+   FLOATING HEARTS
+=================================== */
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.setAttribute("aria-hidden", "true");
+    const romanticEmojis = ["❤️", "💕", "💗", "💖", "💘", "💝", "💞", "✨", "🌹"];
+    heart.textContent = romanticEmojis[Math.floor(Math.random() * romanticEmojis.length)];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (12 + Math.random() * 20) + "px";
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 9000);
+
+}
+
+
+function createHearts(number) {
+
+    for (let i = 0; i < number; i++) {
+
+        setTimeout(createHeart, i * 100);
+
+    }
+
+}
+
+
+/* Create occasional hearts */
+
+setInterval(() => {
+
+    createHeart();
+
+}, 1500);
+
+
+/* ===================================
+   CONFETTI
+=================================== */
+
+function confetti() {
+
+    const symbols = [
+        "✨",
+        "🎉",
+        "💖",
+        "💕",
+        "🎂",
+        "❤️"
+    ];
+
+    for (let i = 0; i < 50; i++) {
+
+        const item = document.createElement("div");
+
+        item.innerHTML =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+        item.style.position = "fixed";
+        item.style.left = Math.random() * 100 + "vw";
+        item.style.top = "-30px";
+        item.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+
+        item.style.zIndex = "999";
+
+        item.style.transition =
+            "transform 4s linear, opacity 4s";
+
+        document.body.appendChild(item);
+
+        setTimeout(() => {
+
+            item.style.transform =
+                `translateY(110vh) rotate(${Math.random() * 720}deg)`;
+
+            item.style.opacity = "0";
+
+        }, 50);
+
+        setTimeout(() => {
+
+            item.remove();
+
+        }, 4500);
+
+    }
+
+}
+
+
+/* Confetti when page is opened */
+
+setTimeout(() => {
+
+    confetti();
+
+}, 1500);
+
+</script>
+
+</body>
+</html>
